@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Daim ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="music" loop>
+  <source src="1.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn" class="music-btn" onclick="toggleMusic()">
+  🎵 Play Music
+</button>
+
+<div class="hearts" id="hearts"></div>
+
+<!-- PAGE 1 -->
+<section class="page active" id="page1">
+  <div class="content">
+    <p class="small-title">A SPECIAL DAY FOR SOMEONE SPECIAL</p>
+    <h1 class="birthday-title">
+      HAPPY<br>
+      BIRTHDAY<br>
+      <span>DAIM!</span>
+    </h1>
+    <p class="subtitle">Today is all about YOU! ❤️</p>
+    <div class="cake">🎂</div>
+    <button onclick="nextPage(2)">Let's Celebrate ✨</button>
+  </div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="page2">
+  <div class="content">
+    <h1 class="heading">Beautiful Memories 📸</h1>
+    <p class="subtitle">Every picture tells a story ❤️</p>
+
+    <div class="gallery">
+      <img src="1.jpg" alt="Daim memory">
+      <img src="2.jpg" alt="Daim memory">
+      <img src="3.jpg" alt="Daim memory">
+      <img src="4.jpg" alt="Daim memory">
+    </div>
+
+    <button onclick="nextPage(3)">Next Surprise 💌</button>
+  </div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page" id="page3">
+  <div class="content message-card">
+    <div class="big-heart">💖</div>
+    <h1 class="heading">A Special Message</h1>
+
+    <p class="message">
+      Happy Birthday, Dear Daim! ❤️
+      <br><br>
+      May your life always be filled with
+      happiness, laughter, love and endless
+      blessings.
+      <br><br>
+      May all your dreams come true.
+      Keep smiling, keep shining and
+      always be happy!
+      <br><br>
+      You are truly special! 🌟
+    </p>
+
+    <button onclick="nextPage(4)">One Last Surprise 🎁</button>
+  </div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page" id="page4">
+  <div class="content">
+    <h1 class="heading">Make a Wish! 🌟</h1>
+    <div class="cake-big">🎂</div>
+    <h1 class="birthday-title">HAPPY BIRTHDAY DAIM!</h1>
+    <p class="subtitle">May your day be as wonderful as you are! ❤️</p>
+    <div class="fireworks">🎆 🎉 🎊 🎆</div>
+    <button onclick="nextPage(1)">Watch Again ❤️</button>
+  </div>
+</section>
+
+<div class="navigation">
+  <button onclick="nextPage(1)">1</button>
+  <button onclick="nextPage(2)">2</button>
+  <button onclick="nextPage(3)">3</button>
+  <button onclick="nextPage(4)">4</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
